@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+            background-color: hsl(0, 0%, 90%);
+        }
+        #Grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3%;
+            padding-right: 80px;
+        }
+        #box {
+            padding: 10px;
+            background-color: white;
+            width: 100%;
+            border-radius: 6%;
+            padding-right: 3px;
+        }
+        .child1 {
+            display: flex;
+            justify-content: center;
+        }
+        .child2 {
+            display: flex;
+            background-color: pink;
+            border-radius: 8%;
+            border: 3px dashed palevioletred;
+            width: 50%;
+            height: 22%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 48%;
+        }
+        .left, .right {
+            flex: 0;
+            padding: 5px;
+            padding-left: 5px;
+        }
+        .left {
+            border-right: 3px dashed palevioletred;
+            height: 15px;
+            padding-bottom: 50px;
+            align-items: center;
+            text-align: center;
+        }
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            border-radius: 5%;
+        }
+        h4 {
+            color: palevioletred;
+        }
+
+        /* Medium screens (768px to 1024px) */
+        @media screen and (max-width: 1024px) {
+            #Grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Small screens (up to 768px) */
+        @media screen and (max-width: 768px) {
+            #Grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .last{
+            padding-top: 6%;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; width: 100%; justify-content: center; align-items: center; gap: 10px;">
+        <p style="border: 2px solid pink; width: 50px;"></p>
+        <h2>OFFERS</h2>
+        <p style="border: 2px solid pink; width: 50px;"></p>
+    </div>
+    <div id="Grid">
+        <!-- Card 1 -->
+        <div id="box">
+            <div>
+                <div class="child1">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/57456d53-5131-4652-8828-5d7903f69f97.jpg" alt="Deal" width="270px">
+                </div>
+                <br>
+                <div class="child2">
+                    <div class="left"><h4>DEAL400</h4></div>
+                    <div class="right"><img src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="copy" width="13px"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div id="box">
+            <div>
+                <div class="child1">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/57456d53-5131-4652-8828-5d7903f69f97.jpg" alt="Deal" width="270px">
+                </div>
+                <br>
+                <div class="child2">
+                    <div class="left"><h4>DEAL400</h4></div>
+                    <div class="right"><img src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="copy" width="13px"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the structure for additional cards as needed -->
+        <!-- Card 3 -->
+        <div id="box">
+            <div>
+                <div class="child1">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/57456d53-5131-4652-8828-5d7903f69f97.jpg" alt="Deal" width="270px">
+                </div>
+                <br>
+                <div class="child2">
+                    <div class="left"><h4>DEAL400</h4></div>
+                    <div class="right"><img src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="copy" width="13px"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div id="box">
+            <div>
+                <div class="child1">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/57456d53-5131-4652-8828-5d7903f69f97.jpg" alt="Deal" width="270px">
+                </div>
+                <br>
+                <div class="child2">
+                    <div class="left"><h4>DEAL400</h4></div>
+                    <div class="right"><img src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="copy" width="13px"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Add more cards here -->
+        <div id="box">
+            <div>
+                <div class="child1">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/57456d53-5131-4652-8828-5d7903f69f97.jpg" alt="Deal" width="270px">
+                </div>
+                <br>
+                <div class="child2">
+                    <div class="left"><h4>DEAL400</h4></div>
+                    <div class="right"><img src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="copy" width="13px"></div>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div>
+                <div class="child1">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/57456d53-5131-4652-8828-5d7903f69f97.jpg" alt="Deal" width="270px">
+                </div>
+                <br>
+                <div class="child2">
+                    <div class="left"><h4>DEAL400</h4></div>
+                    <div class="right"><img src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="copy" width="13px"></div>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div>
+                <div class="child1">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/57456d53-5131-4652-8828-5d7903f69f97.jpg" alt="Deal" width="270px">
+                </div>
+                <br>
+                <div class="child2">
+                    <div class="left"><h4>DEAL400</h4></div>
+                    <div class="right"><img src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="copy" width="13px"></div>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+    
+    <div class="last" style="display: flex; width: 100%; justify-content: center; align-items: center; gap: 10px;">
+        <p style="border: 2px solid pink; width: 50px;"></p>
+        <h2>LET’S STAY IN TOUCH</h2>
+        <p style="border: 2px solid pink; width: 50px;"></p>
+    </div>
+</body>
+</html>
